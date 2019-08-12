@@ -24,7 +24,7 @@ The limit was 10 players.
 
 2. You must press on one of that player name. 
 
-3. After that, you will see photos of the player (Screen Shot 2). By clicking on the picture, ti will become animated. If you press again in the same picture it is become not animated.
+3. After that, you will see photos of the player (Screen Shot 2). By clicking on the picture, it will become animated. If you press again in the same picture it is become not animated.
 
 4. If your favorite player is not in the list of players, you can add him by writing his name in the "Add Player" chapter and click on the button "Add Player". Then follow the instructions in chapter 2.
 
