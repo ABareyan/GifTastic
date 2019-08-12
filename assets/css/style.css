@@ -1,24 +1,102 @@
+@font-face {
+    font-family: soccer;
+    src: url(../font/FridayNightLights-l5pe.ttf)
+}
+
 body {
-    background-image: url("../images/back.jpg");
+    background-image: url("../images/1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color: rgb(211, 143, 49);
+    background-color: #000;
+    color: rgb(198, 211, 14);
 }
 
 header {
     width: 80%;
+    height: 100px;
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 3em;
-    text-align: center;
+.container {
+    margin: 60px 0 60px 60px;
 }
 
-button {
-    margin: 5px;
-    background: #000;
-    color: ivory;
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: soccer;
+    padding: 35px;
+    display: block;
+}
+
+#player-button {
+    margin: 20px;
+}
+
+.player-btn {
+    width: 185px;
+    height: 50px;
+    margin: 10px;
+    color: #000;
+    border-radius: 6px;
+    background: rgb(223, 117, 20);
+    font-size: 1.1em;
+}
+
+.player-btn:hover {
+    cursor: pointer;
+    background: rgb(145, 75, 11);
+}
+
+#player-form {
+    margin: 30px;
+}
+
+#player-input {
+    width: 180px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+#new-player {
+    width: 120px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 10px;
+    background: rgb(198, 211, 14);
+    color: #000;
+    font-size: 0.9em;
+}
+
+#new-player:hover {
+    background: rgb(142, 151, 10);
+    cursor: pointer;
+}
+
+.players-result {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.player-result {
+    margin: 20px;
+}
+
+img:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 4px #fff;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px #fff;
 }

@@ -1,10 +1,20 @@
-var players = ["Pele", "Diego Maradona", "Ronaldinho", "Zinedine Zidane"];
+var players = [
+    "Pele",
+    "Diego Maradona",
+    "Cristiano Ronaldo",
+    "Henrikh Mkhitaryan",
+    "Zinedine Zidane",
+    "Sergio Ramos",
+    "Lukas Podolsk",
+    "Manuel Neuer",
+
+];
 
 function makeButtons() {
     $('#player-button').empty();
     for (var i = 0; i < players.length; i++) {
         var btn = $('<button>');
-        btn.addClass("player");
+        btn.addClass("player-btn");
         btn.attr("data-name", players[i]);
         btn.text(players[i]);
         $('#player-button').append(btn);
@@ -28,27 +38,33 @@ function aboutPlayer() {
         console.log(result);
         $('#player-view').empty();
 
+        var playerSecton = $("<section class='players-result'>");
+
         for (var i = 0; i < result.length; i++) {
-            var imgDiv = $('<div>');
-            var imgView = result[i].images.original.url;
-            var imgStill = result[i].images.original_still.url;
+            var imgDiv = $("<div class='player-result'>");
+            var imgView = result[i].images.fixed_height.url;
+            var imgStill = result[i].images.fixed_height_still.url;
             // console.log(imgView);
 
-            var imgGif = $('<img>');
+            var imgGif = $("<img>");
             imgGif.attr("src", imgStill);
             imgGif.attr("data-animate", imgView);
             imgGif.attr("data-still", imgStill);
             imgGif.attr("data-state", "still");
-            $('#player-view').prepend(imgGif);
             imgGif.on('click', animate)
 
 
             var rate = result[i].rating;
 
 
-            var playerRate = $('<p>').text("Rating is: " + rate);
+            var playerRate = $('<p>').text("Rating: " + rate);
 
-            $('#player-view').prepend(playerRate);
+            imgDiv.prepend(imgGif);
+            imgDiv.prepend(playerRate);
+
+            playerSecton.prepend(imgDiv);
+
+            $('#player-view').prepend(playerSecton);
         }
     });
 };
@@ -70,12 +86,16 @@ $("#new-player").on("click", function(event) {
     event.preventDefault();
 
     player = $('#player-input').val().trim();
-    players.push(player);
-    console.log(players);
 
-    makeButtons();
+    if (player === "") {
+        alert("Please Add Player Name!")
+    } else {
+        players.push(player);
+        console.log(players);
 
+        makeButtons();
+    }
 
 });
 
-$(document).on("click", ".player", aboutPlayer);
+$(document).on("click", ".player-btn", aboutPlayer);
