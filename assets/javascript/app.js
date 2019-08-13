@@ -5,7 +5,7 @@ var players = [
     "Henrikh Mkhitaryan",
     "Zinedine Zidane",
     "Sergio Ramos",
-    "Lukas Podolsk",
+    "Lukas Podolski",
     "Manuel Neuer",
 
 ];
