@@ -16,7 +16,7 @@ https://abareyan.github.io/GifTastic/
 
 The project was created by the GIPHY API.
 
-The limit was 10 players.
+The limit was 10 pictures.
 
 ** How to use this page. **
 

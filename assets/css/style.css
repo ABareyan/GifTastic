@@ -25,6 +25,7 @@ header {
 
 h1 {
     font-size: 4em;
+    letter-spacing: 4px;
     text-align: center;
     font-family: soccer;
     padding: 35px;
