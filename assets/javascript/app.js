@@ -1,3 +1,5 @@
+// list of player
+
 var players = [
     "Pele",
     "Diego Maradona",
@@ -10,6 +12,7 @@ var players = [
 
 ];
 
+// function for make buttons
 function makeButtons() {
     $('#player-button').empty();
     for (var i = 0; i < players.length; i++) {
@@ -24,6 +27,7 @@ function makeButtons() {
 
 makeButtons();
 
+// function for choose the players
 function aboutPlayer() {
     var apiKey = "MrqWaVNJjj1NZq05zK8EQhWWu2LAeOie";
     var limit = 10;
@@ -69,7 +73,7 @@ function aboutPlayer() {
     });
 };
 
-
+// function for animate
 function animate() {
     var state = $(this).attr('data-state')
     if (state === 'still') {

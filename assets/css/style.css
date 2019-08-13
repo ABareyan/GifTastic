@@ -101,3 +101,90 @@ p {
     letter-spacing: 3px;
     text-shadow: 1px 1px 2px #fff;
 }
+
+@media screen and (min-width: 639px) and (max-width: 980px) {
+    h1 {
+        font-size: 3em;
+    }
+    .container {
+        margin: 20px;
+    }
+    #player-button {
+        margin: 15px;
+    }
+    .player-btn {
+        width: 135px;
+        height: 35px;
+        margin: 7px;
+        color: #000;
+        border-radius: 6px;
+        background: rgb(223, 117, 20);
+        font-size: .8em;
+    }
+    .player-btn:hover {
+        cursor: pointer;
+        background: rgb(145, 75, 11);
+    }
+    img {
+        width: 190px;
+    }
+    #player-input {
+        width: 135px;
+        height: 28px;
+        font-size: .8em;
+    }
+    #new-player {
+        width: 110px;
+        height: 30px;
+        margin-left: 10px;
+        color: #000;
+        font-size: .8em;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 640px) {
+    h1 {
+        font-size: 1.3em;
+        padding: 20px;
+    }
+    header {
+        height: 40px;
+    }
+    .container {
+        margin: 10px;
+    }
+    #player-button {
+        margin: 10px;
+    }
+    .player-btn {
+        width: 95px;
+        height: 25px;
+        margin: 5px;
+        border-radius: 6px;
+        font-size: .6em;
+    }
+    #player-input {
+        width: 95px;
+        height: 25px;
+        font-size: .6em;
+    }
+    #new-player {
+        width: 80px;
+        height: 25px;
+        font-size: .6em;
+    }
+    #player-form {
+        margin: 7px;
+    }
+    img {
+        width: 110px;
+    }
+    p {
+        padding: 5px;
+        font-size: .9em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-shadow: none;
+    }
+}
